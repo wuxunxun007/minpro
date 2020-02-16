@@ -1,0 +1,31 @@
+<!-- <import src="/wxParse/wxParse.wxml"/> -->
+<image src="{{proimg}}"></image>
+<view>{{proname}}</view>
+<view>￥{{price}}</view>
+<!-- <view>{{detail}}</view> -->
+<!-- <view wx:html="{{detail}}"></view> -->
+<!-- 解析HTML标签  --- wxparse -->
+<!-- rich-text
+https://developers.weixin.qq.com/miniprogram/dev/component/rich-text.html
+ -->
+<rich-text nodes="{{detail}}" ></rich-text>
+<!-- <template is="wxParse" data="{{wxParseData:article.nodes}}"/> -->
+
+<van-goods-action>
+  <van-goods-action-icon
+    icon="chat-o"
+    text="客服"
+  />
+  <van-goods-action-icon
+    icon="cart-o"
+    text="购物车"
+  />
+  <van-goods-action-button
+    text="加入购物车"
+    type="warning"
+  />
+  <van-goods-action-button
+    text="立即购买"
+  />
+</van-goods-action>
+

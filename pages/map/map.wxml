@@ -1,0 +1,9 @@
+<map 
+  class="map" 
+  longitude="{{longitude}}" 
+  latitude="{{latitude}}"
+  scale="20"
+  markers="{{markers}}"
+  controls="{{controls}}"
+  bindcontroltap="controlshandler"
+  ></map>
